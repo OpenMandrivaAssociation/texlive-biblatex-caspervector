@@ -1,11 +1,11 @@
-# revision 27954
+# revision 29794
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-caspervector
-# catalog-date 2012-10-11 18:47:05 +0200
+# catalog-date 2013-04-08 10:17:07 +0200
 # catalog-license lppl1.3
-# catalog-version 0.1.4
+# catalog-version 0.1.8
 Name:		texlive-biblatex-caspervector
-Version:	0.1.4
+Version:	0.1.8
 Release:	1
 Summary:	A simple citation style for Chinese users
 Group:		Publishing
@@ -38,8 +38,7 @@ biblatex.
 %{_texmfdistdir}/tex/latex/biblatex-caspervector/caspervector.bbx
 %{_texmfdistdir}/tex/latex/biblatex-caspervector/caspervector.cbx
 %doc %{_texmfdistdir}/doc/latex/biblatex-caspervector/ChangeLog.txt
-%doc %{_texmfdistdir}/doc/latex/biblatex-caspervector/Makefile.doc
-%doc %{_texmfdistdir}/doc/latex/biblatex-caspervector/README
+%doc %{_texmfdistdir}/doc/latex/biblatex-caspervector/Makefile
 %doc %{_texmfdistdir}/doc/latex/biblatex-caspervector/readme.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex-caspervector/readme.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-caspervector/readme.tex
