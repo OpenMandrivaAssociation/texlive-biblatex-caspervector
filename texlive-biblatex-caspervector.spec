@@ -1,12 +1,12 @@
-# revision 29794
+# revision 32516
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-caspervector
-# catalog-date 2013-04-08 10:17:07 +0200
+# catalog-date 2013-12-27 09:49:55 +0100
 # catalog-license lppl1.3
-# catalog-version 0.1.8
+# catalog-version 0.1.9
 Name:		texlive-biblatex-caspervector
-Version:	0.1.8
-Release:	6
+Version:	0.1.9
+Release:	1
 Summary:	A simple citation style for Chinese users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-caspervector
