@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 0.1.9
 Name:		texlive-biblatex-caspervector
-Version:	0.1.9
-Release:	5
+Version:	0.2.7
+Release:	1
 Summary:	A simple citation style for Chinese users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-caspervector
