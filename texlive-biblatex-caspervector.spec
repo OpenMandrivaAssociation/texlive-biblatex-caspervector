@@ -1,6 +1,6 @@
 Name:		texlive-biblatex-caspervector
-Version:	64866
-Release:	2
+Version:	70491
+Release:	1
 Summary:	A simple citation style for Chinese users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-caspervector
