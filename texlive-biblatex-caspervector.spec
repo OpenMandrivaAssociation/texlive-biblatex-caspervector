@@ -1,41 +1,23 @@
-Name:		texlive-biblatex-caspervector
-Version:	70491
-Release:	1
+%global tl_name biblatex-caspervector
+%global tl_revision 79461
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.3.7
+Release:	%{tl_revision}.1
 Summary:	A simple citation style for Chinese users
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-caspervector
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-caspervector.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-caspervector.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-caspervector.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-caspervector.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
 The package provides a simple and easily extensible
-biblography/citation style for Chinese LaTeX users, using
-biblatex.
+bibliography/citation style for Chinese LaTeX users, using BibLaTeX.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/biblatex-caspervector
-%doc %{_texmfdistdir}/doc/latex/biblatex-caspervector
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
